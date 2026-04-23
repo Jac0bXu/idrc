@@ -1,0 +1,18 @@
+{
+  "name": "idrc-marketplace",
+  "description": "Marketplace for idrc plugin",
+  "owner": {
+    "name": "Jacob Xu"
+  },
+  "plugins": [
+    {
+      "name": "idrc",
+      "description": "Toggle 'I Don't Really Care' mode — auto-answers questions, auto-approves plans, bypasses all permission prompts",
+      "version": "0.1.0",
+      "source": "./",
+      "author": {
+        "name": "Jacob Xu"
+      }
+    }
+  ]
+}

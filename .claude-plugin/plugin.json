@@ -1,0 +1,15 @@
+{
+  "name": "idrc",
+  "description": "Toggle 'I Don't Really Care' mode — auto-answers questions, auto-approves plans, bypasses all permission prompts",
+  "version": "0.1.0",
+  "author": {
+    "name": "Jacob Xu"
+  },
+  "license": "MIT",
+  "keywords": [
+    "automation",
+    "permissions",
+    "mode",
+    "toggle"
+  ]
+}
