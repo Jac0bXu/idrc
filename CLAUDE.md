@@ -4,27 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**idrc** is a Claude Code plugin that provides a toggleable fully-automated mode. When active (`/idrc`):
-- Auto-answers AskUserQuestion using smart-pick (best judgment)
-- Auto-approves ExitPlanMode (plans proceed to implementation immediately)
-- Bypasses all tool permission prompts via PreToolUse hook
-
-State is stored per-project in `.claude/.idrc-active`.
-
-## Architecture
-
-```
-idrc/
-├── .claude-plugin/       # Plugin metadata (plugin.json, marketplace.json)
-├── hooks/
-│   ├── hooks.json        # Declares PreToolUse hook matching all tools
-│   ├── run-hook.cmd      # Cross-platform polyglot wrapper (CMD + bash)
-│   ├── check-idrc-active.sh  # Returns allow if .claude/.idrc-active exists
-│   └── toggle-idrc.sh    # Creates/deletes .claude/.idrc-active
-└── skills/
-    └── idrc/
-        └── SKILL.md      # Skill: toggle + auto-behavior instructions
-```
+**idrc** is a Claude Code plugin that toggles a fully-automated mode via `/idrc`. State is stored per-project in `.claude/.idrc-active`.
 
 ## Development
 
